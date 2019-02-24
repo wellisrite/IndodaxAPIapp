@@ -1,0 +1,19 @@
+{
+  "name": "trade",
+  "version": "1.0.0",
+  "description": "indodax trade",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "mongodb": "^3.1.1",
+    "node-telegram-bot-api": "^0.30.0",
+    "play-sound": "^1.1.2",
+    "pusher": "^2.1.2",
+    "technicalindicators": "^1.1.11"
+  }
+}

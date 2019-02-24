@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for technicalindicators/lib/moving_averages/WEMA.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">technicalindicators/lib/moving_averages/</a> WEMA.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75.68% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>28/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>27/36</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">90×</span>
+<span class="cline-any cline-yes">42×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">90×</span>
+<span class="cline-any cline-yes">90×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">90×</span>
+<span class="cline-any cline-yes">90×</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict"
+//TODO; THis is copied from EMA for checking if WEMA works correctly, we need to refactor if this works good.
+const SMA        = require('./SMA');
+const nf = require('./../Utils/NumberFormatter');
+&nbsp;
+let WEMA;
+&nbsp;
+&nbsp;
+&nbsp;
+module.exports = WEMA = function(input) {
+&nbsp;
+  var period = input.period
+  var priceArray = input.values;
+  var sma;
+  t</span>his.format = input.format || <span class="branch-1 cbranch-no" title="branch not covered" >nf;
+&nbsp;
+  this.result = [];
+&nbsp;
+  sma = new SMA({period : period, values :[], format : (v) =&gt; {return v}});
+&nbsp;
+  this.generator = (function* (){
+    var tick = yield;
+    var prevMa,currentMa;
+    while (true) {
+      if(prevMa === undefined){
+        currentMa = sma.nextValue(tick);
+      }else {
+        currentMa = ((prevMa * (period - 1)) + tick) / period;
+      }
+      prevMa = currentMa;
+      tick = yield currentMa;
+    }
+  })();
+&nbsp;
+  this.generator.next();
+&nbsp;
+  priceArray.forEach((tick) =&gt; {
+    var <span class="cstat-no" title="statement not covered" >result = this.generator.next(tick);</span>
+    if(<span class="cstat-no" title="statement not covered" >result.value){</span>
+      this.<span class="cstat-no" title="statement not covered" >result.push(this.format(result.value));</span>
+    }
+  });
+};
+&nbsp;
+WEMA.calculate = <span class="fstat-no" title="function not covered" >function(input) {</span>
+  if(<span class="cstat-no" title="statement not covered" >input.reversedInput) {</span>
+    input.<span class="cstat-no" title="statement not covered" >values.reverse();</span>
+  }
+  let <span class="cstat-no" title="statement not covered" >result = (new WEMA(input)).result;</span>
+  input.<span class="cstat-no" title="statement not covered" >reversedInput ? result.reverse():undefined;</span>
+  return <span class="cstat-no" title="statement not covered" >result;</span>
+};
+&nbsp;
+WEMA.prototype.getResult = <span class="fstat-no" title="function not covered" >function () {</span>
+  return <span class="cstat-no" title="statement not covered" >this.result;</span>
+};
+&nbsp;
+WEMA.prototype.nextValue = function (price) {
+  var nextResult = this.generator.next(price);
+  if(nextResult.value)
+    return this.format(nextResult.value);
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Jan 08 2017 20:04:29 GMT-0600 (CST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

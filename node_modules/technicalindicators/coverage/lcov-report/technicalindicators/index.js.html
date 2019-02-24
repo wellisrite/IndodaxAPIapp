@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for technicalindicators/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">technicalindicators/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/35</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict"
+<span class="cstat-no" title="statement not covered" >let SMA                        = require('./lib/moving_averages/SMA.js');</span>
+<span class="cstat-no" title="statement not covered" >let EMA                        = require('./lib/moving_averages/EMA.js');</span>
+<span class="cstat-no" title="statement not covered" >let WMA                        = require('./lib/moving_averages/WMA.js');</span>
+<span class="cstat-no" title="statement not covered" >let WEMA                       = require('./lib/moving_averages/WEMA.js');</span>
+<span class="cstat-no" title="statement not covered" >let MACD                       = require('./lib/moving_averages/MACD.js');</span>
+<span class="cstat-no" title="statement not covered" >let RSI                        = require('./lib/oscillators/RSI.js');</span>
+<span class="cstat-no" title="statement not covered" >let BollingerBands             = require('./lib/volatility/BollingerBands.js');</span>
+<span class="cstat-no" title="statement not covered" >let ADX                        = require('./lib/directionalmovement/ADX.js');</span>
+<span class="cstat-no" title="statement not covered" >let ATR                        = require('./lib/directionalmovement/ATR.js');</span>
+<span class="cstat-no" title="statement not covered" >let ROC                        = require('./lib/momentum/ROC.js');</span>
+<span class="cstat-no" title="statement not covered" >let KST                        = require('./lib/momentum/KST.js');</span>
+<span class="cstat-no" title="statement not covered" >let Stochastic                 = require('./lib/momentum/Stochastic.js');</span>
+<span class="cstat-no" title="statement not covered" >let WilliamsR                  = require('./lib/momentum/WilliamsR.js');</span>
+<span class="cstat-no" title="statement not covered" >let ADL                        = require('./lib/volume/ADL.js');</span>
+<span class="cstat-no" title="statement not covered" >let OBV                        = require('./lib/volume/OBV.js');</span>
+<span class="cstat-no" title="statement not covered" >let TRIX                       = require('./lib/momentum/TRIX.js');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >let AbandonedBaby              = require('./lib/candlestick/AbandonedBaby.js');</span>
+<span class="cstat-no" title="statement not covered" >let Doji                       = require('./lib/candlestick/Doji.js');</span>
+<span class="cstat-no" title="statement not covered" >let BearishEngulfingPattern    = require('./lib/candlestick/BearishEngulfingPattern.js');</span>
+<span class="cstat-no" title="statement not covered" >let BullishEngulfingPattern    = require('./lib/candlestick/BullishEngulfingPattern.js');</span>
+<span class="cstat-no" title="statement not covered" >let DarkCloudCover             = require('./lib/candlestick/DarkCloudCover.js');</span>
+<span class="cstat-no" title="statement not covered" >let DownsideTasukiGap          = require('./lib/candlestick/DownsideTasukiGap.js');</span>
+<span class="cstat-no" title="statement not covered" >let DragonFlyDoji              = require('./lib/candlestick/DragonFlyDoji');</span>
+<span class="cstat-no" title="statement not covered" >let GraveStoneDoji             = require('./lib/candlestick/GraveStoneDoji');</span>
+<span class="cstat-no" title="statement not covered" >let Harami                     = require('./lib/candlestick/Harami');</span>
+<span class="cstat-no" title="statement not covered" >let HaramiCross                = require('./lib/candlestick/HaramiCross');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >let Indicators;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >global.AvailableIndicators = [];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >module.exports = Indicators = {</span>
+  SMA                          : SMA,
+  EMA                          : EMA,
+  MACD                         : MACD,
+  RSI                          : RSI,
+  WMA                          : WMA,
+  BollingerBands               : BollingerBands,
+  ATR                          : ATR,
+  ADX                          : ADX,
+  WEMA                         : WEMA,
+  ROC                          : ROC,
+  KST                          : KST,
+  Stochastic                   : Stochastic,
+  WilliamsR                    : WilliamsR,
+  ADL                          : ADL,
+  OBV                          : OBV,
+  TRIX                         : TRIX,
+  AbandonedBaby                : new AbandonedBaby(),
+  Doji                         : new Doji(),
+  BearishEngulfingPattern      : new BearishEngulfingPattern(),
+  BullishEngulfingPattern      : new BullishEngulfingPattern(),
+  DarkCloudCover               : new DarkCloudCover(),
+  DownsideTasukiGap            : new DownsideTasukiGap(),
+  DragonFlyDoji                : new DragonFlyDoji(),
+  GraveStoneDoji               : new GraveStoneDoji(),
+  Harami                       : new Harami(),
+  HaramiCross                  : new HaramiCross(),
+&nbsp;
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >Object.assign(global, Indicators);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >for(let indicator in Indicators){</span>
+  var <span class="cstat-no" title="statement not covered" >indicatorName = indicator.toLowerCase();</span>
+  global.<span class="cstat-no" title="statement not covered" >AvailableIndicators.push(indicator);</span>
+  let <span class="cstat-no" title="statement not covered" >fn            = Indicators[indicator].calculate || Indicators[indicator].hasPattern</span>
+  global[<span class="cstat-no" title="statement not covered" >indicatorName] = fn; </span>
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Jan 08 2017 20:04:29 GMT-0600 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

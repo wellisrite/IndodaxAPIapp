@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for technicalindicators/lib/momentum/KST.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">technicalindicators/lib/momentum/</a> KST.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>67/67</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>26/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>62/62</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">124×</span>
+<span class="cline-any cline-yes">104×</span>
+<span class="cline-any cline-yes">84×</span>
+<span class="cline-any cline-yes">24×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">150×</span>
+<span class="cline-any cline-yes">150×</span>
+<span class="cline-any cline-yes">18×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Created by AAravindan on 5/9/16.
+ */
+"use strict"
+&nbsp;
+const ROC = require('./ROC.js');
+const SMA = require('../moving_averages/SMA.js');
+const nf  = require('../Utils/NumberFormatter');
+&nbsp;
+let KST;
+&nbsp;
+module.exports = KST = function(input) {
+&nbsp;
+  let priceArray  = input.values;
+  let rocPer1     = input.ROCPer1;
+  let rocPer2     = input.ROCPer2;
+  let rocPer3     = input.ROCPer3;
+  let rocPer4     = input.ROCPer4;
+&nbsp;
+  let smaPer1     = input.SMAROCPer1;
+  let smaPer2     = input.SMAROCPer2;
+  let smaPer3     = input.SMAROCPer3;
+  let smaPer4     = input.SMAROCPer4;
+&nbsp;
+  let signalPeriod= input.signalPeriod;
+&nbsp;
+  let roc1        = new ROC({ period : rocPer1, values: []});
+  let roc2        = new ROC({ period : rocPer2, values: []});
+  let roc3        = new ROC({ period : rocPer3, values: []});
+  let roc4        = new ROC({ period : rocPer4, values: []});
+&nbsp;
+  let sma1        = new SMA({ period : smaPer1, values: [], format : (v) =&gt; {return v}});
+  let sma2        = new SMA({ period : smaPer2, values: [], format : (v) =&gt; {return v}});
+  let sma3        = new SMA({ period : smaPer3, values: [], format : (v) =&gt; {return v}});
+  let sma4        = new SMA({ period : smaPer4, values: [], format : (v) =&gt; {return v}});
+  let signalSMA   = new SMA({ period : signalPeriod, values: [], format : (v) =&gt; {return v}})
+&nbsp;
+  let format = input.format || nf;
+&nbsp;
+  this.result = [];
+&nbsp;
+  let firstResult = Math.max(rocPer1 + smaPer1, rocPer2+smaPer2, rocPer3+smaPer3, rocPer4+smaPer4);
+  this.generator = (function* (){
+    let index = 1;
+    let tick = yield;
+    let kst;
+    let RCMA1,RCMA2,RCMA3,RCMA4,signal,result;
+    while (true) {
+      let roc1Result = roc1.nextValue(tick);
+      let roc2Result = roc2.nextValue(tick);
+      let roc3Result = roc3.nextValue(tick);
+      let roc4Result = roc4.nextValue(tick);
+      RCMA1 = (roc1Result!==undefined) ? sma1.nextValue(roc1Result) : undefined;
+      RCMA2 = (roc2Result!==undefined) ? sma2.nextValue(roc2Result) : undefined;
+      RCMA3 = (roc3Result!==undefined) ? sma3.nextValue(roc3Result) : undefined;
+      RCMA4 = (roc4Result!==undefined) ? sma4.nextValue(roc4Result) : undefined;
+      if(index &lt; firstResult){
+        index++;
+      }else {
+        kst = (RCMA1 * 1) + (RCMA2 * 2) + (RCMA3 * 3) + (RCMA4 * 4)
+      }
+      signal = (kst!==undefined) ? signalSMA.nextValue(kst) : undefined;
+      result = kst!==undefined ? {
+        kst : format(kst),
+        signal : signal ? format(signal) : undefined
+      } : undefined;
+      tick = yield result;
+    }
+  })();
+&nbsp;
+  this.generator.next();
+&nbsp;
+  priceArray.forEach((tick) =&gt; {
+    let result = this.generator.next(tick);
+    if(result.value !== undefined){
+      this.result.push(result.value);
+    }
+  });
+};
+&nbsp;
+KST.calculate = function(input) {
+  input.reversedInput ? input.values.reverse(): undefined;
+  let result = (new KST(input)).result;
+  input.reversedInput ? result.reverse():undefined;
+  return result;
+};
+&nbsp;
+KST.prototype.getResult = function () {
+  return this.result;
+};
+&nbsp;
+KST.prototype.nextValue = function (price) {
+  let nextResult = this.generator.next(price);
+  if(nextResult.value !== undefined)
+    return nextResult.value;
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Jan 08 2017 20:04:29 GMT-0600 (CST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

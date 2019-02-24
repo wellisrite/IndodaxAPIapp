@@ -1,0 +1,2 @@
+#!/bin/bash
+node /home/well/nodejs/tradeidx/cointoidr.js $1 $2
