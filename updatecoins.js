@@ -2,8 +2,8 @@ var http = require("http");
 const request = require('request');
 var crypto = require('crypto');
 const querystring = require('querystring');
-var apik='2DMYDAI4-9VZCKEOI-BYSSMOHU-OBVIMEPP-ZYB4WR4V'; // your API-key
-var secret = '0854dd967d556e5178765ac09123061de311db0137d839447ebfd478269b56b7487973e4216857db'; // your Secret-key
+var apik=''; // your API-key
+var secret = ''; // your Secret-key
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
  MongoClient.connect("mongodb://localhost:27017/YourDB", { useNewUrlParser: true },function(err,db){
